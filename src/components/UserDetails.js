@@ -4,7 +4,7 @@ const UserDetails = (user) => {
 	return (
 		<div>
 	      {!!user.score && <li className="list-group-item"><h3>Score: {user.score}</h3></li>}
-	      <li className="list-group-item"> <img src={user.info.avatar_url} className="img-rounded img-responsive"/></li>
+	      <li className="list-group-item"> <img src={user.info.avatar_url} className="img-rounded img-responsive" alt={user.info.avatar_url}/></li>
 	      {user.info.name && <li className="list-group-item">Name: {user.info.name}</li>}
 	      <li className="list-group-item">Username: {user.info.login}</li>
 	      {user.info.location && <li className="list-group-item">Location: {user.info.location}</li>}
