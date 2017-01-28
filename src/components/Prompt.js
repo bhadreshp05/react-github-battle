@@ -1,13 +1,9 @@
 import React, { PropTypes } from 'react';
+import styles from '../styles/styles';
 
 const Prompt = (props) => {
-	let styles = {
-		transparentBg: {
-			background: 'transparent'
-		}
-	}
 	return (
-		<div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={styles}>
+		<div className="jumbotron col-sm-6 col-sm-offset-3 text-center" style={styles.transparentBg}>
 			<h1>{props.header}</h1>
 			<div className="col-sm-12">
 				<form onSubmit={props.onSubmitUser}>
